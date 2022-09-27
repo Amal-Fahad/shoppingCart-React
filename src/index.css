@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, rgb(187, 184, 184) 0%, rgb(128, 116, 116) 13%, rgb(84, 77, 77) 35%, rgb(172, 165, 165) 61%, rgb(108, 106, 106) 84%, rgb(42, 42, 42) 100%);
+}
+
+.loading {
+  text-align: center;
+}
+
+.appWrapper {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav li .link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.appHeader {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.appMain {
+  flex: 1;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0px;
+  display: grid;
+  gap: 20px;
+}
+.appMain .productGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px 50px;
+}
+.appMain .productGallery .productItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+.appMain .productGallery .productItem .itemName {
+  text-align: center;
+}
+.appMain .productGallery .productItem .itemPic {
+  border-radius: 3px;
+}
+.appMain .productGallery .productItem .itemMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appMain .productGallery .productItem .itemMeta .itemPrice {
+  font-weight: bold;
+}
+.appMain .productGallery .productItem .itemMeta .cartButton {
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(187, 184, 184) 0%, rgb(128, 116, 116) 13%, rgb(84, 77, 77) 35%, rgb(172, 165, 165) 61%, rgb(108, 106, 106) 84%, rgb(42, 42, 42) 100%);
+  color: #fff;
+  border: 1px solid linear-gradient(90deg, rgb(187, 184, 184) 0%, rgb(128, 116, 116) 13%, rgb(84, 77, 77) 35%, rgb(172, 165, 165) 61%, rgb(108, 106, 106) 84%, rgb(42, 42, 42) 100%);
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.appMain .productGallery .productItem .itemMeta .cartButton:hover {
+  opacity: 0.8;
+}
+
+.Productpage {
+  display: flex;
+  gap: 50px;
+}
+.Productpage img {
+  width: 50%;
+  border-radius: 0%;
+  opacity: 0.9;
+}
+.Productpage img:hover {
+  transform: scale(1);
+}
+.Productpage .itemMeta {
+  text-align: center;
+}
+.Productpage .itemMeta .itemPrice {
+  font-size: 30px;
+  font-weight: bold;
+}
+.Productpage .itemMeta .cartButton {
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(187, 184, 184) 0%, rgb(128, 116, 116) 13%, rgb(84, 77, 77) 35%, rgb(172, 165, 165) 61%, rgb(108, 106, 106) 84%, rgb(42, 42, 42) 100%);
+  color: #fff;
+  border: 1px solid linear-gradient(90deg, rgb(187, 184, 184) 0%, rgb(128, 116, 116) 13%, rgb(84, 77, 77) 35%, rgb(172, 165, 165) 61%, rgb(108, 106, 106) 84%, rgb(42, 42, 42) 100%);
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.Productpage .itemMeta .cartButton:hover {
+  opacity: 0.8;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 0px;
+}
+.cart .cartList {
+  display: flex;
+  flex-direction: column;
+}
+.cart .cartList .CartItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px;
+}
+.cart .cartList .CartItem .itemPic {
+  width: 60px;
+}
+.cart .cartList .CartItem .itemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cart .cartList .CartItem .itemInfo .cartUpdater {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.cart .cartList .CartItem .itemInfo .cartUpdater button {
+  background: #222;
+  color: white;
+  border: 1px solid #222;
+  width: 30px;
+  padding: 3px 0px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cart .cartList .CartItem .itemInfo .cartUpdater button:hover {
+  opacity: 0.8;
+}
+.cart .cartList .CartItem .itemPrice {
+  margin-left: auto;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+.cart .cartTotal {
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.cart .cartFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cartFooter .clear {
+  background: #e11d48;
+  color: #fff;
+  border: 1px solid #e11d48;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cart .cartFooter .clear:hover {
+  opacity: 0.8;
+}
+.cart .cartFooter .checkout {
+  background: #15803d;
+  color: #fff;
+  border: 1px solid #15803d;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cart .cartFooter .checkout:hover {
+  opacity: 0.8;
+}
+.cart .cartFooter .checkoutModel {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(49, 49, 49, 0.8);
+  display: grid;
+  place-items: center;
+}
+.cart .cartFooter .checkoutModel .modelContent {
+  width: 30%;
+  height: 25%;
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 30px;
+  color: #222;
+}
+.cart .cartFooter .checkoutModel .modelContent button {
+  width: 80px;
+  background-color: rgba(49, 49, 49, 0.8);
+  border: none;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.appFooter {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+/* Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  opacity: 0.6;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}/*# sourceMappingURL=index.css.map */
