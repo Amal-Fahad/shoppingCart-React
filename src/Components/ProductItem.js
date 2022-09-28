@@ -42,7 +42,7 @@ function ProductItem({ id, title, price, image }) {
       </div>
       <div className="itemPic">
         <Link to={`product/${id}`}>
-          <img src={`/images/${image}`} alt="" />
+          <img src={`${process.env.PUBLIC_URL}/images/${image}`} alt="" />
         </Link>
       </div>
       <div className="itemMeta">
