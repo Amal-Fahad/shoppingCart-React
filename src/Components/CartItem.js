@@ -31,7 +31,7 @@ const CartItem = ({ id, title, price, image, count }) => {
   return (
     <div className="CartItem">
       <div className="itemPic">
-        <img src={`/images/${image}`} alt="" />
+        <img src={`${process.env.PUBLIC_URL}/images/${image}`} alt="" />
       </div>
       <div className="itemInfo">
         <p>{title}</p>

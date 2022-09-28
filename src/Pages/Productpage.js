@@ -58,7 +58,7 @@ const Productpage = () => {
 
   return (
     <div className="Productpage">
-      <img src={`/images/${item?.image}`} alt="" />
+      <img src={`${process.env.PUBLIC_URL}/images/${item?.image}`} alt="" />
       <div className="itemMeta">
         <h1>{item?.title}</h1>
         <div className="itemPrice">

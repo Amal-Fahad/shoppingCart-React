@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  siteName: "React Shop",
+  siteName: " Live With Trends",
   productsData: [],
   loading: true,
 };
